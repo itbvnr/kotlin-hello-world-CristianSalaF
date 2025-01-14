@@ -18,6 +18,7 @@ internal fun App() = AppTheme {
         //Text("Your app goes here!", Modifier.align(Alignment.Center), color = Color.Blue, fontWeight = FontWeight.Bold)
         //HelloWorldApp()
         //PrintWelcome()
-        PrintResource()
+        //PrintResource()
+        PrintContact()
     }
 }

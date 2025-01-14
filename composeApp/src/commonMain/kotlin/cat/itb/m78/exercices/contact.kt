@@ -23,7 +23,7 @@ val contact = Contact("Marta Casserres", "marta@example.com", "934578484")
 
 @Composable
 fun PrintContact() {
-        Column(modifier = Modifier.fillMaxSize().background(Color.Gray),
+        Column(modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center) {
 
@@ -35,7 +35,7 @@ fun PrintContact() {
             Text(contact.fullName, fontSize = 20.sp)
             Spacer(modifier = Modifier.height(10.dp))
 
-            Box(modifier = Modifier.sizeIn(192.dp,64.dp,384.dp,128.dp).clip(RoundedCornerShape(percent = 40))/*.clip(CutCornerShape(percent = 50))*/.background(Color.LightGray)){
+            Box(modifier = Modifier.clip(RoundedCornerShape(percent = 40))/*.clip(CutCornerShape(percent = 50))*/.background(Color.LightGray).padding(10.dp)) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center){
                     Text(contact.email, fontSize = 10.sp)

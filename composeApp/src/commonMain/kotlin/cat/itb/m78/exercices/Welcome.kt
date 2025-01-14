@@ -17,7 +17,7 @@ import kotlin.math.PI
 @Composable
 fun PrintWelcome() {
     //HorizontalArrangement, VerticalArrangement
-    Column(modifier = Modifier.fillMaxSize().background(Color.Black),
+    Column(modifier = Modifier.fillMaxSize().background(Color.Gray),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center) {
         Text("Welcome!", fontSize = 20.sp)

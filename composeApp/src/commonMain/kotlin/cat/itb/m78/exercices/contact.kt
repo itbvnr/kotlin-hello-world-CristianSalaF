@@ -23,26 +23,25 @@ val contact = Contact("Marta Casserres", "marta@example.com", "934578484")
 
 @Composable
 fun PrintContact() {
-        Column(modifier = Modifier.fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center) {
+    Column(modifier = Modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center) {
 
-            Image(
-                painter = painterResource(Res.drawable.generatedFace),
-                modifier = Modifier.size(128.dp).padding(20.dp).clip(CircleShape),
-                contentDescription = null)
+        Image(
+            painter = painterResource(Res.drawable.generatedFace),
+            modifier = Modifier.size(128.dp).padding(20.dp).clip(CircleShape),
+            contentDescription = null)
 
-            Text(contact.fullName, fontSize = 20.sp)
-            Spacer(modifier = Modifier.height(10.dp))
+        Text(contact.fullName, fontSize = 20.sp)
+        Spacer(modifier = Modifier.height(10.dp))
 
-            Box(modifier = Modifier.clip(RoundedCornerShape(percent = 40))/*.clip(CutCornerShape(percent = 50))*/.background(Color.LightGray).padding(10.dp)) {
-                Column(horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.Center){
-                    Text("✉ "+contact.email, fontSize = 10.sp)
-                    Text("📞 "+contact.phone, fontSize = 10.sp)
-                }
+        Box(modifier = Modifier.clip(RoundedCornerShape(percent = 40))/*.clip(CutCornerShape(percent = 50))*/.background(Color.LightGray).padding(10.dp)) {
+            Column(horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center){
+                Text("✉ "+contact.email, fontSize = 10.sp)
+                Text("📞 "+contact.phone, fontSize = 10.sp)
             }
-
+        }
     }
 }
 

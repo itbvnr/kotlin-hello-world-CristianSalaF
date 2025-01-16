@@ -38,10 +38,18 @@ fun PrintContact() {
             Box(modifier = Modifier.clip(RoundedCornerShape(percent = 40))/*.clip(CutCornerShape(percent = 50))*/.background(Color.LightGray).padding(10.dp)) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.Center){
-                    Text(contact.email, fontSize = 10.sp)
-                    Text(contact.phone, fontSize = 10.sp)
+                    Text("✉ "+contact.email, fontSize = 10.sp)
+                    Text("📞 "+contact.phone, fontSize = 10.sp)
                 }
             }
 
     }
 }
+
+/*
+int unicode = 0x1F60A;
+
+public String getEmojiByUnicode(int unicode){
+    return new String(Character.toChars(unicode));
+}
+*/

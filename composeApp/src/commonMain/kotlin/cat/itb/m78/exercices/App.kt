@@ -19,6 +19,7 @@ internal fun App() = AppTheme {
         //HelloWorldApp()
         //PrintWelcome()
         //PrintResource()
-        PrintContact()
+        //PrintContact()
+        PrintMessageList()
     }
 }

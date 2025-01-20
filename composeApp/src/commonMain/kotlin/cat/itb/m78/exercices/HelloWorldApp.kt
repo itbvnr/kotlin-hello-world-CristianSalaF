@@ -2,8 +2,11 @@ package cat.itb.m78.exercices
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -27,6 +30,11 @@ fun HelloWorldApp() {
             Spacer(Modifier.height(30.dp))
             Text(PI.toString()+PI.toString())
             Spacer(Modifier.height(30.dp))
+            /*var text = remember { mutableStateOf("Hello World") }
+            Button(onClick = { text.value = "hello desktop!" }) {
+                Text(text.value)
+                Text(text.value)
+            }*/
         }
         Row {
             Text(PI.toString()+PI.toString())

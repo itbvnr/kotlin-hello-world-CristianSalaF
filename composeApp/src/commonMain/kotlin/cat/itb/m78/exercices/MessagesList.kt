@@ -57,6 +57,17 @@ fun PrintMessageList() {
                 Text(message.body)
                 }
             Spacer(Modifier.height(32.dp))
+            /*Scaffold(
+            topBar = {
+                TopAppBar(
+                title = {Text("title")},
+                navigationIcon = {Icon(Icons.AutoMirrored.Filled.ArrowBack, "back")}),
+
+            }floatingActionButton = {
+                FloatingActionButton(onClick = {}){
+                Icon(Icons.Default.Add, "add")
+                }
+            })*/
             }
         }
     }

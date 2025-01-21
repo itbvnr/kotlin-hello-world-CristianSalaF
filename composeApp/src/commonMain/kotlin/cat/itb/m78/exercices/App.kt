@@ -20,6 +20,7 @@ internal fun App() = AppTheme {
         //PrintWelcome()
         //PrintResource()
         //PrintContact()
-        PrintMessageList()
+        //PrintMessageList()
+        GoodMorningNight()
     }
 }

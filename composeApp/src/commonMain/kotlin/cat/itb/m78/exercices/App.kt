@@ -23,6 +23,7 @@ internal fun App() = AppTheme {
         //PrintMessageList()
         //GoodMorningNight()
         //SayHelloScreen()
-        StartDiceRoller()
+        //StartDiceRoller()
+        StartViewModelCounter()
     }
 }
